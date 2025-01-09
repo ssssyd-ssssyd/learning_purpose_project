@@ -1,11 +1,10 @@
 import { Component, model } from '@angular/core';
 
 @Component({
-  selector: 'app-cart-item',
-  standalone: true,
-  imports: [],
-  templateUrl: './cart-item.component.html',
-  styleUrl: './cart-item.component.css',
+    selector: 'app-cart-item',
+    imports: [],
+    templateUrl: './cart-item.component.html',
+    styleUrl: './cart-item.component.css'
 })
 export class CartItemComponent {
   count = model(0);

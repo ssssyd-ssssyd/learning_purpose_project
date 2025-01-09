@@ -5,12 +5,11 @@ import { CounterStore } from './store/counter.store';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, CartComponent, ReactiveFormsModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  providers: [CounterStore],
+    selector: 'app-root',
+    imports: [RouterOutlet, CartComponent, ReactiveFormsModule],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    providers: [CounterStore]
 })
 export class AppComponent implements OnInit {
   num = signal(0);
