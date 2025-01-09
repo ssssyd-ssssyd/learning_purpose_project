@@ -1,0 +1,32 @@
+{{ result() }}
+
+--------
+
+<div>
+  <h1>Angular Forms Global Observable Example</h1>
+
+  <!-- Form Group with Inputs -->
+  <form [formGroup]="form">
+    <div>
+      <label for="firstName">First Name:</label>
+      <input id="firstName" formControlName="firstName" />
+    </div>
+
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input id="lastName" formControlName="lastName" />
+    </div>
+  </form>
+
+  <!-- Button to Mark Name Control as Touched -->
+  <button (click)="markNameTouched()">Mark "Name" as Touched</button>
+
+  <!-- Display Logs -->
+  <h3>Event Logs:</h3>
+  {{ touchedLog }}
+  @for (log of touchedLog; track log) {
+  <ul>
+    <li>{{ log }}</li>
+  </ul>
+  }
+</div>
